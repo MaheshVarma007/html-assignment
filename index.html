@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <font face='Helvetica'>
+     <h1 align="center">Hey there!</h1>
+     <p align="center"><font size=4px color=gray>Please fill the below deatils to sign in</font></p><br>
+     <form align='center' method="POST">
+        <label for="em"><font size=3px>Email</font><b>@</b></label>
+         <input type="email" id="em" name="em" title="Enter your email id" required><br><br>
+         <label for="pd"><font size="3px">Password</font></label>
+         <input type=password id="pd" name="pd" title="Enter your password" min=4 max=10 required><br><br>
+         <label for="bd"><font face="Helvetica" size="3px">Birthday &#127874</font></label>
+         <input type="date" id="bd" name="bd" title="Enter your birthdate"><br><br>
+         <label for="gd"><font face="Helvetica" size=3px>Gender </font></label><br>
+         <font size=2px>
+         <input type="radio" id="gd" name="gd" value="male">Male 👨
+         <input type="radio" id="gd" name="gd" value="female">Female 👩
+         <input type="radio" id="gd" name="gd" value='others'>Others🏳️‍⚧️<br><br>
+         </font>
+         <label for='cntry'><font face='Helvetica' size=3px>Select your country🏳️‍🌈</font></label>
+         <input list="cntry" name='cntry'>
+         <datalist id='cntry'>
+             <option value='India'>India</option>
+             <option value='Australia'>Australia</option>
+             <option value='China'>China</option>
+             <option value='Germany'>Germany</option>
+             <option value='Japan'>Japan</option>
+             <option value='London'>London</option>
+             <option value='Russia'>Russia</option>
+             <option value='U.A.E'>U.A.E</option>
+             <option value='U.S.A'>U.S.A</option>
+         </datalist><br><br>
+         <label for='bd'><font face='Helvetica' size=3px>Let us know some info about your education📝</font></label><br>
+         <textarea rows='10' cols='50' required></textarea><br><br>
+         <input type=checkbox id='agr' name='agr'>
+         <label for='agr'><font color=blue face='sans-serrif' size=2px>Agree to let us use your data for creating tables<br>
+            <b><font size=2px color=black>Note: We respect your privacy and we do not mean to misuse this data anywhere</b></font></font>
+        </label><br><br><br>
+        <button type="reset" title="Reset all the values entered">Reset</button>
+        <button type="submit" autofocus id='si' name='si' title="click to sign in" onclick="alert('SIGN IN SUCCESSFULL! \nWe have recieved your deatails and will mail your form once it is complete.\nYou can either go back to main page by pressing the BACK button or reset the given details and enter new ones')">
+            SIGN IN
+        </button>
+     </form>
+     <a href='main.html'>
+     <img src='pngwave.png' width="60px" height="70px" href='https://www.google.co.in/' title="Click to go back">
+    </a>
+    </font>
+</body>
+</html>
